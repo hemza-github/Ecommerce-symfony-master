@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ controller_name }}
+{% endblock %}
+
+{% block body %}
+
+	<div class="container-fluid">
+		<div class="container text-center">
+			<div class="jumbotron mt-5">
+				<h1>{{ controller_name }}!</h1>
+				<p class="lead">
+					Bienvenue sur le site Click And Buy !
+				</p>
+
+				<p>Vous trouverez ici un grand choix de rien du tout a prix défiant toute concurence !</br>
+			    votre bonheur se trouve ici !</p>
+
+                {# Séparateur #}
+                <hr
+                class="my-5">
+
+                {# Bouton accès a la boutique  #}
+                <p class="lead">
+                    <a href="{{ path('shop') }}" class="btn btn-primary btn-lg" role="button">
+                        <i class="fas fa-info-circle"></i>
+                        Dépenser mon argent !
+                    </a>
+                </p>
+	        </div>
+        </div>
+    </div>
+    
+
+{% endblock %}
